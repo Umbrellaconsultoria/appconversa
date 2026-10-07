@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #0f172a; /* Slate 900 */
+  color: white;
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  overflow: hidden; /* Evita rolagem no tablet */
+}
+
+/* Utilitários personalizados para o Rosto */
+@layer utilities {
+  .animate-blink {
+    animation: blink 4s infinite;
+  }
+  .animate-talk {
+    animation: talk 0.2s alternate infinite;
+  }
+}
+
+@keyframes blink {
+  0%, 96%, 98%, 100% {
+    transform: scaleY(1);
+  }
+  97% {
+    transform: scaleY(0.1);
+  }
+}
+
+@keyframes talk {
+  0% {
+    height: 10px;
+    border-radius: 10px;
+  }
+  100% {
+    height: 40px;
+    border-radius: 20px;
+  }
+}

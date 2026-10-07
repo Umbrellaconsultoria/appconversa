@@ -1,0 +1,29 @@
+[project]
+name = "conversa"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "docx>=0.2.4",
+    "dotenv>=0.9.9",
+    "edge-tts>=7.2.8",
+    "fastapi>=0.136.1",
+    "fpdf>=1.7.2",
+    "gtts>=2.5.4",
+    "openai>=1.91.0",
+    "openai-whisper>=20250625",
+    "pipwin>=0.5.2",
+    "playsound==1.2.2",
+    "pyaudio>=0.2.14",
+    "pydub>=0.25.1",
+    "pygame>=2.6.1",
+    "python-docx>=1.2.0",
+    "python-dotenv>=1.1.1",
+    "pyttsx3>=2.98",
+    "speechrecognition>=3.14.3",
+    "streamlit>=1.46.0",
+    "uvicorn>=0.46.0",
+    "websockets>=16.0",
+    "whisper>=1.1.10",
+]
